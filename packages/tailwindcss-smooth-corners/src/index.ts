@@ -76,7 +76,9 @@ function resolveRoundedValues(api: PluginAPI): Record<string, string> {
     | Record<string, string>
     | undefined;
 
-  return { ...(rawBorderRadius ?? defaultTheme.borderRadius) };
+  return Object.fromEntries(
+    Object.entries(rawBorderRadius ?? defaultTheme.borderRadius).filter(([key]) => key !== "DEFAULT"),
+  );
 }
 
 function resolveCornerShapeValues(api: PluginAPI): Record<string, string> {
@@ -145,7 +147,6 @@ const tailwindcssSmoothCorners: ReturnType<
         },
         {
           values: buildCornerShapeUtilityValues(api),
-          type: ["number", "*"],
         },
       );
     },
