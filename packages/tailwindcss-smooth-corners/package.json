@@ -1,0 +1,54 @@
+{
+  "name": "tailwindcss-smooth-corners",
+  "version": "0.0.0",
+  "description": "A Tailwind CSS plugin that applies smooth superellipse corner shapes to rounded utilities.",
+  "license": "MIT",
+  "author": "jeiwinfrey",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "lint": "tsc --noEmit",
+    "test": "echo \"No tests yet\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^4.1.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.13",
+    "tsup": "^8.5.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "tailwindcss",
+    "tailwind-plugin",
+    "corner-shape",
+    "superellipse",
+    "squircle"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeiwinfrey/tailwindcss-smooth-corners.git",
+    "directory": "packages/tailwindcss-smooth-corners"
+  },
+  "homepage": "https://smooth-corner.jeiwinfrey.com",
+  "bugs": {
+    "url": "https://github.com/jeiwinfrey/tailwindcss-smooth-corners/issues"
+  }
+}
