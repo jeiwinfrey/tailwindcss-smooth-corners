@@ -6,6 +6,8 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "eslint .",
+    "prebuild": "pnpm --filter tailwindcss-smooth-corners build",
+    "predev": "pnpm --filter tailwindcss-smooth-corners build",
     "test": "echo \"No site tests yet\"",
     "typecheck": "tsc --noEmit"
   },
