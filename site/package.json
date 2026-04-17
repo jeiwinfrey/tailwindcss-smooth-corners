@@ -6,8 +6,6 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "eslint .",
-    "prebuild": "pnpm --filter tailwindcss-smooth-corners build",
-    "predev": "pnpm --filter tailwindcss-smooth-corners build",
     "test": "echo \"No site tests yet\"",
     "typecheck": "tsc --noEmit"
   },
@@ -23,7 +21,7 @@
     "react-dom": "^19.2.0",
     "shadcn": "^4.3.0",
     "tailwind-merge": "^3.3.1",
-    "tailwindcss-smooth-corners": "workspace:*",
+    "tailwindcss-smooth-corners": "file:./vendor/tailwindcss-smooth-corners",
     "tw-animate-css": "^1.4.0"
   },
   "devDependencies": {
