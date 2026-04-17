@@ -1,7 +1,7 @@
 {
   "name": "tailwindcss-smooth-corners",
-  "version": "0.0.0",
-  "description": "A Tailwind CSS plugin that applies smooth superellipse corner shapes to rounded utilities.",
+  "version": "0.1.0",
+  "description": "A Tailwind CSS plugin that applies smooth superellipse corner shapes to rounded utilities without rewriting components.",
   "license": "MIT",
   "author": "jeiwinfrey",
   "type": "module",
